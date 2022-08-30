@@ -24,6 +24,6 @@ clean:
 	rm $(BINDIR)/*.class
 		
 run:
-	java -cp bin TypingTutorApp 
+	java -cp bin typingTutor.TypingTutorApp 
 	 
 	

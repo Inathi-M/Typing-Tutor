@@ -7,7 +7,7 @@ JAVAC=/usr/bin/javac
 SRCDIR=src
 BINDIR=bin
 
-$(BINDIR)/typingTutor/%.class:$(SRCDIR)/%.java
+$(BINDIR)/%.class:$(SRCDIR)/%.java
 	$(JAVAC) -d $(BINDIR)/ -cp $(BINDIR) $<
 	
 CLASSES=WordDictionary.class FallingWord.class  SlidingWord.class GamePanel.class\
@@ -24,6 +24,6 @@ clean:
 	rm $(BINDIR)/*.class
 		
 run:
-	java -cp bin typingTutor.TypingTutorApp 
+	java -cp $(BINDIR) typingTutor.TypingTutorApp $(input) 
 	 
 	
