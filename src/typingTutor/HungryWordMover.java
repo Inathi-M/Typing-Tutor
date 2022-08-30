@@ -11,7 +11,7 @@ public class HungryWordMover extends  Thread{
     private SlidingWord myWord;
     private AtomicBoolean done;
     private AtomicBoolean pause;
-    CountDownLatch startLatch; //so all can start at once
+    CountDownLatch startLatch; // all will start simutaneously
     private Score score;
     private FallingWord[] newWords;
     HungryWordMover( SlidingWord word) {
@@ -36,7 +36,6 @@ public class HungryWordMover extends  Thread{
 
     public void run() {
 
-        //System.out.println(myWord.getWord() + " falling speed = " + myWord.getSpeed());
         try {
             System.out.println(myWord + " waiting to start " );
             startLatch.await();
@@ -50,7 +49,7 @@ public class HungryWordMover extends  Thread{
             // animate the word
             while (!myWord.vanished() && !done.get()) {
 
-                // If the hungry word touches others words they should disappear
+                // If the hungry word touches others words they should disappear coz it consumes them as it is hungry
 
                 for (int i = 0; i < newWords.length; i++) {
                     // Starting x

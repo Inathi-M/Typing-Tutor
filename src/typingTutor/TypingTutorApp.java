@@ -217,7 +217,6 @@ public class TypingTutorApp {
 		horizontalWord.setWord(dict.getNewWord());
 		horizontalWord.setY(frameY / 2 - 50);
 		horizontalWord.setMaximumX(gameWindow.getWidth() - 50);
-	//	horizontalWord.start();
 
 		horizontalMover = new HungryWordMover(horizontalWord,dict,score,startLatch,done,pause);
 		horizontalMover.setWords(words);
@@ -237,7 +236,6 @@ public static String[] getDictFromFile(String filename) {
 			dictStr=new String[dictLength];
 			for (int i=0;i<dictLength;i++) {
 				dictStr[i]=new String(dictReader.next());
-				//System.out.println(i+ " read '" + dictStr[i]+"'"); //for checking
 			}
 			dictReader.close();
 		} catch (IOException e) {
