@@ -97,7 +97,6 @@ public class SlidingWord {
         word = dict.getNewWord();
         vanished = false;
         slidingSpeed = (int) (Math.random() * (maxWait - minWait) + minWait);
-        // System.out.println(getWord() + " falling speed = " + getSpeed());
     }
 
     public synchronized boolean matchWord(String typedText) {
