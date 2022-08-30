@@ -1,13 +1,13 @@
-#Makefile for Assignment 1
+#Makefile for Assignment 2
 #Nkosinathi Tshaphile
-#15 August 2022
+#25 August 2022
 
 JAVAC=/usr/bin/javac
 .SUFFIXES: .java .class
 SRCDIR=src
-BINDIR=out
+BINDIR=bin
 
-$(BINDIR)/%.class:$(SRCDIR)/%.java
+$(BINDIR)/typingTutor/%.class:$(SRCDIR)/%.java
 	$(JAVAC) -d $(BINDIR)/ -cp $(BINDIR) $<
 	
 CLASSES=WordDictionary.class FallingWord.class  SlidingWord.class GamePanel.class\
@@ -23,15 +23,7 @@ compile: $(CLASS_FILES)
 clean: 
 	rm $(BINDIR)/*.class
 		
-runMedianSerial: $(CLASS_FILES)
-	java -cp $(BINDIR) MedianFilterSerial
-	
-runMedianParallel: $(CLASS_FILES)
-	java -cp $(BINDIR) MedianFilterParallel
-	
-runMeanSerial: $(CLASS_FILES)
-	java -cp $(BINDIR) MeanFilterSerial 
-
-runMeanParallel: $(CLASS_FILES)
-	java -cp $(BINDIR) MeanFilterParallel 
+run:
+	java -cp bin typingTutor.TypingTutorApp 
+	 
 	
