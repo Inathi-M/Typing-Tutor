@@ -1,0 +1,30 @@
+commit 3e76237f80055aa2ef5211427c6acf74ac66eb67 (HEAD -> master)
+Author: Inathi-M <tshaphilenkosnathi@gmail.com>
+Date:   Tue Aug 30 19:58:20 2022 +0200
+
+    This is the last version
+
+commit 3c9eea9c1f9a6361faddab260e11bba5dc90c3d8
+Author: Inathi-M <tshaphilenkosnathi@gmail.com>
+Date:   Sun Aug 28 19:56:42 2022 +0200
+
+    Fixed a lot bugs and errors
+
+commit ec0ac5fcdcadeba89b3c377be6e00eec2073c11c
+Author: Inathi-M <tshaphilenkosnathi@gmail.com>
+Date:   Thu Aug 25 16:57:29 2022 +0200
+
+    Added a new class and fixed the Makefile
+
+commit 36d849d068ed6861fab787a4a09709950f974659
+Author: Inathi-M <tshaphilenkosnathi@gmail.com>
+Date:   Tue Aug 23 15:23:47 2022 +0200
+
+    Made the Makefile
+
+commit 3f9a107bfeb1e84e6e980215a64e9df5c105b416
+Author: Inathi-M <tshaphilenkosnathi@gmail.com>
+Date:   Mon Aug 22 12:20:43 2022 +0200
+
+    This is the very first commit
+:
